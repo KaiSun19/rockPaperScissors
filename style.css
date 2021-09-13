@@ -1,0 +1,146 @@
+#Name {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+}
+
+#subHeadDiv {
+    margin-top: 10%;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#subhead {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gameScore{
+    display: none;
+    margin-top: 10%;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gameHead{
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#gameHead:hover{
+    cursor:pointer;
+}
+
+#gamePlay gameScore{
+    display: none;
+}
+
+#enter{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#enter:hover{
+    animation: enlarge .2s ease;
+    animation-fill-mode: forwards;  
+}
+
+@keyframes enlarge{
+    100% {
+        font-size: 110%;
+    }
+}
+
+@keyframes enlarge-fade-out{
+    50% {
+        font-size: 110%;
+    }
+    
+    100%{
+        color: rgb(228, 228, 228);
+    }
+    
+}
+
+#displayChoice{
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#displayPlayerChoice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.playChoice input[type=radio] {
+    display: none;
+  }
+
+#playSelection {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#rock , #paper, #scissor {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+} 
+
+.playChoice {
+    display: inline-block;
+    width:8em;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #5c5252;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.7em;
+    margin-top:1%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(56, 56, 56);
+}
+
+.playChoice:hover{
+    background-color: #a8a8a8;
+    cursor: pointer;
+}
+
+.fa-hand-rock:before {
+    content: "\f255";
+    font-size: 500%;
+}
+
+.fa-hand-paper:before {
+    content: "\f255";
+    font-size: 500%;
+}
+
+.fa-hand-scissors:before {
+    content: "\f255";
+    font-size: 500%;
+}
+
+.pressed {
+    transform: scale(0.98);
+  }
+
+footer {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0px;
+    left: 46%;
+}

@@ -3,12 +3,58 @@
 <head>
   <title>Rock Paper Scissors</title>
   <meta charset="UTF-8"/>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a30f38a570.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <h1 id = "Name"> Rock Paper Scissors Game</h1>
+  <div id = "subHeadDiv">
+  <h2 id = "subhead"> Press   <span id = "enter"> Enter </span> to Start</h2>
+  </div>
+  <div id = gamePlay>
+  <h2 id = "gameHead"> Make your Play </h2>
+  <div id = "playSelection">
+  <div class ="playChoice" id = "rock">
+    <input id="rock" name="choice" type="radio">
+    <label for="rock">Rock</label>
+  </div>
+  <div class ="playChoice" id = "paper">
+    <input id="paper" name="choice" type="radio">
+    <label for="paper">Paper</label>
+  </div>
+  <div class ="playChoice" id = "scissor">
+    <input id="scissor" name="choice" type="radio">
+    <label for="scissor">Scissor</label>
+  </div>
+  </div>
+</div>
+<div id = "displayChoice">
+  <div id = "displayPlayerChoice">
+  </div>
+  <div id = "displayCompChoice">
+  </div>
+</div>
+
+<div id = "gameScore">
+  <div id = "playerScore">
+  <h2 >Your Score: <span id = "playerScoreNumber">  </span> </h2>
+  </div>
+  <div id = "compScore">
+    <h2>Computer Score: <span id = "compScoreNumber">  </span></h2>
+    </div>
+</div>
+
 </body>
+
+<footer>
+  <i><p> &copy by KaiSun</p></i>
+</footer>
 </html>
 
 <script>
-  console.log(game());
+  //console.log(game());
 </script>
